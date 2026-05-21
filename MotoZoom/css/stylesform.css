@@ -1,0 +1,122 @@
+/* Form Button Styles */
+form button{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: linear-gradient(to right, #082d00, #2e7d32);
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    background: linear-gradient(to right, #66bb6a, #388e3c);
+    transform: translateY(-2px);
+}
+
+/* Active (pressed) state */
+form button:active{
+    transform: translateY(0);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Disabled state */
+form button:disabled{
+    background: #bdbdbd;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+
+/* Form Input Styles */
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+form input[type="date"],
+form input[type="tel"],
+form input[type="url"],
+form input[type="search"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #ffffff, #f2f2f2);
+    color: #000000;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus state */
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 6px rgba(76, 175, 80, 0.6);
+}
+
+/* Placeholder text */
+form input::placeholder,
+form textarea::placeholder {
+    color: #888888;
+}
+
+/* Disabled / read only */
+form input:disabled,
+form textarea:disabled,
+form select:disabled,
+form input[readonly],
+form textarea[readonly] {
+    background: #e0e0e0;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Validation States */
+
+form input:invalid,
+form textarea:invalid,
+form select:invalid {
+    border-color: #000000;
+}
+
+form input:valid,
+form textarea:valid,
+form select:valid {
+    border-color: #000000;
+}
+
+/* Checkbox label */
+
+.input-style-label {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    background: linear-gradient(to bottom, #ffffff, #f2f2f2);
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000000;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Space between checkbox and text */
+.input-style-label input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Focus effect when checkbox is selected */
+.input-style-label:focus-within {
+    border-color: #4caf50;
+    box-shadow: 0 0 6px rgba(76, 175, 80, 0.6);
+}
